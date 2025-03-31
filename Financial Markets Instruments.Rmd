@@ -1,0 +1,24 @@
+---
+title: "37011 Financial Markets Instruments"
+author: "Franklin Kipkorir"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(openxlsx)
+```
+
+
+```{r datasets, warning=FALSE, echo=FALSE}
+U_S_Gulf_Coast_Kerosene_Type_Jet_Fuel_Spot_Price_FOB <- read.csv("U.S._Gulf_Coast_Kerosene-Type_Jet_Fuel_Spot_Price_FOB.csv")
+
+Cushing_OK_WTI_Spot_Price_FOB <- read.csv("Cushing_OK_WTI_Spot_Price_FOB.csv")
+
+Crude_Oil_May_24 <- read.xlsx("Crude Oil May 24.xlsx")
+```
+
